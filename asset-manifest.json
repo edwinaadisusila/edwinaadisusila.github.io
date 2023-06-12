@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/static/css/main.073c9b0a.css",
-    "main.js": "/static/js/main.32439d88.js",
-    "static/js/787.bbe01249.chunk.js": "/static/js/787.bbe01249.chunk.js",
-    "static/media/logo.svg": "/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
-    "index.html": "/index.html",
-    "main.073c9b0a.css.map": "/static/css/main.073c9b0a.css.map",
-    "main.32439d88.js.map": "/static/js/main.32439d88.js.map",
-    "787.bbe01249.chunk.js.map": "/static/js/787.bbe01249.chunk.js.map"
+    "main.css": "/edwinaadisusila.github.io/static/css/main.073c9b0a.css",
+    "main.js": "/edwinaadisusila.github.io/static/js/main.da48057c.js",
+    "static/js/787.bbe01249.chunk.js": "/edwinaadisusila.github.io/static/js/787.bbe01249.chunk.js",
+    "static/media/logo.svg": "/edwinaadisusila.github.io/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "index.html": "/edwinaadisusila.github.io/index.html",
+    "main.073c9b0a.css.map": "/edwinaadisusila.github.io/static/css/main.073c9b0a.css.map",
+    "main.da48057c.js.map": "/edwinaadisusila.github.io/static/js/main.da48057c.js.map",
+    "787.bbe01249.chunk.js.map": "/edwinaadisusila.github.io/static/js/787.bbe01249.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.073c9b0a.css",
-    "static/js/main.32439d88.js"
+    "static/js/main.da48057c.js"
   ]
 }
