@@ -1,4 +1,4 @@
-import logo from './edwina.svg';
+import logo from './test.svg';
 import './App.css';
 
 function App() {
@@ -9,6 +9,7 @@ function App() {
         <div className="navbar-tabs">
           <div>something here</div>
         </div>
+        
       </div>
     </div>
   );
