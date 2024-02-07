@@ -1,10 +1,10 @@
 import './App.css';
-import { Box, Button, ChakraProvider, extendTheme, Image } from '@chakra-ui/react'
+import { Box, ChakraProvider, extendTheme, Image } from '@chakra-ui/react'
 import { mode } from "@chakra-ui/theme-tools"
 import ToggleModeButton from './components/ToggleModeButton';
-import MyConfetti from './components/MyConfetti';
-import { useState } from 'react';
 import logo from './edwina_logo.svg';
+import { BrowserRouter, Route, Routes, Link } from 'react-router-dom';
+import Claire from './pages/claire';
 
 const colors = {
   font: {
@@ -35,14 +35,11 @@ const theme = extendTheme({
 })
 
 function App() {
-  const [confetti, setConfetti] = useState(false);
 
-  const triggerConfetti = () => {
-    setConfetti(true);
-  }
 
   return (
     <ChakraProvider theme={theme}>
+      <BrowserRouter>
       <Box>
         <Box className="navbar">
             <Image src={logo.toString()} id="logo" alt="edwina logo"></Image>
@@ -51,10 +48,17 @@ function App() {
           </Box>
         </Box>
       </Box>
-      <Box>
-        <Button onClick={triggerConfetti}>Click for a surprise</Button>
-        <MyConfetti confetti={confetti} setConfetti={setConfetti}/> 
-      </Box>
+      <Link to="/">Home</Link>
+      <Link to="/claire">Bdya</Link>
+
+      
+      <Routes>
+          <Route path="claire" element={<Claire />}>
+            
+          </Route>
+          </Routes>
+      </BrowserRouter>
+      
     </ChakraProvider>
   );
 }
