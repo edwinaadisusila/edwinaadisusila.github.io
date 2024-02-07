@@ -2,7 +2,14 @@ import React from 'react';
 import SizedConfetti from 'react-confetti';
 import useWindowSize from '../hooks/useWindowSize';
 
-function MyConfetti({ confetti, setConfetti}) {
+interface MyConfettiProps {
+  confetti: boolean;
+  setConfetti: (boolean: boolean) => void;
+}
+
+function MyConfetti(props: MyConfettiProps) {
+  const {confetti, setConfetti} = props;
+
   const { width, height } = useWindowSize();
   return (
     <SizedConfetti
@@ -12,7 +19,7 @@ function MyConfetti({ confetti, setConfetti}) {
       recycle={false}
       onConfettiComplete={c => {
         setConfetti(false)
-        c.reset()
+        c?.reset()
       }}
 
     />

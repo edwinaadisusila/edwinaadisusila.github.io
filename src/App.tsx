@@ -1,10 +1,10 @@
-import logo from './edwina_logo.svg';
 import './App.css';
-import { Box, Button, ChakraProvider, extendTheme } from '@chakra-ui/react'
+import { Box, Button, ChakraProvider, extendTheme, Image } from '@chakra-ui/react'
 import { mode } from "@chakra-ui/theme-tools"
 import ToggleModeButton from './components/ToggleModeButton';
 import MyConfetti from './components/MyConfetti';
 import { useState } from 'react';
+import logo from './edwina_logo.svg';
 
 const colors = {
   font: {
@@ -25,7 +25,7 @@ const theme = extendTheme({
   colors: colors,
 
   styles: {
-    global: (props) => ({
+    global: (props: any) => ({
       "html, body": {
         background: mode(colors.background.lightMode, colors.background.darkMode)(props),
         color: mode(colors.font.lightMode, colors.font.darkMode)(props),
@@ -45,7 +45,7 @@ function App() {
     <ChakraProvider theme={theme}>
       <Box>
         <Box className="navbar">
-            <img src={logo} id="logo" alt="edwina logo"></img>
+            <Image src={logo.toString()} id="logo" alt="edwina logo"></Image>
           <Box className="navbar-tabs">
             <ToggleModeButton />
           </Box>
